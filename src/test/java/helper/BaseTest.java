@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeOptions; // Import ChromeOptions
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -31,12 +32,16 @@ public class BaseTest {
 
     // Initialize WebDriver based on browser type using WebDriverManager
     private void initializeDriver() {
-        String browser = properties.getProperty("browser", "edge").toLowerCase(); // Default to Edge
+        String browser = properties.getProperty("browser", "chrome").toLowerCase(); // Default to Chrome
 
         switch (browser) {
             case "chrome":
                 WebDriverManager.chromedriver().setup(); // Automatically sets up ChromeDriver
-                driver = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions(); // Create ChromeOptions instance
+                chromeOptions.addArguments("--headless"); // Optional: Run in headless mode
+                chromeOptions.addArguments("--disable-gpu"); // Optional: Disable GPU acceleration
+                chromeOptions.addArguments("--remote-allow-origins=*"); // Optional: Avoid CORS issues
+                driver = new ChromeDriver(chromeOptions); // Use ChromeOptions
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup(); // Automatically sets up GeckoDriver
