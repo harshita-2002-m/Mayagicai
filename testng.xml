@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MayagicSuite">
+  <test name="MayagicTestSuite" thread-count="5">
+    <classes>
+      <class name="test.MayagicTestcases">
+        <methods>
+          <include name="TestCase_001" />
+          <include name="TestCase_002" />
+          <include name="TestCase_003" />
+          <include name="TestCase_004" />
+          <include name="TestCase_005" />
+          <include name="TestCase_006" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

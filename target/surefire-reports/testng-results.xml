@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-19T19:40:59 IST" name="MayagicSuite" finished-at="2024-12-19T19:42:41 IST" duration-ms="101691">
+    <groups>
+    </groups>
+    <test started-at="2024-12-19T19:40:59 IST" name="MayagicTestSuite" finished-at="2024-12-19T19:42:41 IST" duration-ms="101691">
+      <class name="test.MayagicTestcases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:40:59 IST" name="setup" finished-at="2024-12-19T19:41:06 IST" duration-ms="7120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestCase_001()[pri:1, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:41:06 IST" name="TestCase_001" finished-at="2024-12-19T19:41:07 IST" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_001 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:41:07 IST" name="teardown" finished-at="2024-12-19T19:41:07 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:41:07 IST" name="setup" finished-at="2024-12-19T19:41:12 IST" duration-ms="4658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestCase_002()[pri:2, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:41:12 IST" name="TestCase_002" finished-at="2024-12-19T19:42:17 IST" duration-ms="65813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_002 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:17 IST" name="teardown" finished-at="2024-12-19T19:42:18 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:18 IST" name="setup" finished-at="2024-12-19T19:42:23 IST" duration-ms="5561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestCase_003()[pri:3, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:23 IST" name="TestCase_003" finished-at="2024-12-19T19:42:24 IST" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_003 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:24 IST" name="teardown" finished-at="2024-12-19T19:42:24 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:24 IST" name="setup" finished-at="2024-12-19T19:42:29 IST" duration-ms="4819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestCase_004()[pri:4, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:29 IST" name="TestCase_004" finished-at="2024-12-19T19:42:29 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_004 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:29 IST" name="teardown" finished-at="2024-12-19T19:42:30 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:30 IST" name="setup" finished-at="2024-12-19T19:42:34 IST" duration-ms="4462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestCase_005()[pri:5, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:34 IST" name="TestCase_005" finished-at="2024-12-19T19:42:35 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_005 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:35 IST" name="teardown" finished-at="2024-12-19T19:42:35 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:35 IST" name="setup" finished-at="2024-12-19T19:42:40 IST" duration-ms="4604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestCase_006()[pri:6, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:40 IST" name="TestCase_006" finished-at="2024-12-19T19:42:40 IST" duration-ms="928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase_006 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.MayagicTestcases@4fb61f4a]" started-at="2024-12-19T19:42:40 IST" name="teardown" finished-at="2024-12-19T19:42:41 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.MayagicTestcases -->
+    </test> <!-- MayagicTestSuite -->
+  </suite> <!-- MayagicSuite -->
+</testng-results>

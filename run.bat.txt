@@ -1,0 +1,2 @@
+cd C:\Users\HarshitaMakode\OneDrive - pursuit software development pvt. ltd\Documents\Mayagicai\pom.xml
+mvn test
