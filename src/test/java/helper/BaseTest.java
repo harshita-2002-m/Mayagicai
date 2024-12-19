@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseTest {
     protected WebDriver driver;
     protected WebDriverWait wait;
@@ -27,18 +29,22 @@ public class BaseTest {
         }
     }
 
-    // Initialize WebDriver based on browser type
+    // Initialize WebDriver based on browser type using WebDriverManager
     private void initializeDriver() {
         String browser = properties.getProperty("browser", "edge").toLowerCase(); // Default to Edge
+
         switch (browser) {
             case "chrome":
+                WebDriverManager.chromedriver().setup(); // Automatically sets up ChromeDriver
                 driver = new ChromeDriver();
                 break;
             case "firefox":
+                WebDriverManager.firefoxdriver().setup(); // Automatically sets up GeckoDriver
                 driver = new FirefoxDriver();
                 break;
             case "edge":
             default:
+                WebDriverManager.edgedriver().setup(); // Automatically sets up EdgeDriver
                 driver = new EdgeDriver();
                 break;
         }
@@ -49,7 +55,7 @@ public class BaseTest {
         loadProperties();
         initializeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        driver.get(properties.getProperty("url"));
+        driver.get(properties.getProperty("url", "https://example.com")); // Default URL if not specified
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
